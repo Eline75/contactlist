@@ -1,1 +1,34 @@
-hallo, dit is een update
+<html>
+    <head><script>
+        function voegIemandToe()
+        {
+            var node = document.createElement("LI"); 
+            var sNaam = document.getElementById("myNewName").value;           // Create a <li>  node
+var textnode = document.createTextNode(sNaam);         // Create a text node
+node.appendChild(textnode);                              // Append the text to <li>
+document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList" 
+        }
+    
+    </script>
+    </head>
+<body>
+        <input id="myNewName" type="text "placeholder="new.."> <button onclick="voegIemandToe()">add</button>
+
+        
+        <ul id="myList">        
+     <li>Floris</li>
+    <li>Kees</li>
+    <li> Jan</li>
+
+</ul>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
